@@ -1,11 +1,13 @@
 using UnityEngine;
-using UnityEngine.UI; // Pastikan menggunakan UnityEngine.UI untuk mengakses komponen UI
+using UnityEngine.UI;
 
-public class TimerSpawn : MonoBehaviour
+public class TimerMuncul : MonoBehaviour
 {
     public GameObject timerPrefab; // Prefab UI Timer yang akan dipanggil
-    public Transform canvasTransform; // Transform Canvas untuk menentukan tempat spawn UI
+    public Transform canvasTransform; // Transform Canvas untuk tempat spawn UI
     private bool hasSpawnedTimer = false; // Flag untuk mengecek apakah Timer sudah di-spawn
+
+    public static GameObject activeTimerUI; // Referensi static untuk Timer yang aktif
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,12 +31,12 @@ public class TimerSpawn : MonoBehaviour
     private void SpawnTimer()
     {
         // Membuat UI Timer di dalam Canvas
-        GameObject timerUI = Instantiate(timerPrefab, canvasTransform);
+        activeTimerUI = Instantiate(timerPrefab, canvasTransform);
 
         // Pastikan timer muncul di Canvas (posisi di tengah atau sesuai kebutuhan)
-        timerUI.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+        activeTimerUI.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 
-        // Mengatur timer, jika ada komponen Timer script di prefab
-        Timer timerComponent = timerUI.GetComponent<Timer>();
+        // Mengatur timer jika ada komponen Timer script di prefab
+        Timer timerComponent = activeTimerUI.GetComponent<Timer>();
     }
 }

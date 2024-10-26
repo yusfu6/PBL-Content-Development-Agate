@@ -16,7 +16,7 @@ public class Penumpang : MonoBehaviour
             Destroy(gameObject);
 
             // Atau, bisa melakukan aksi lain seperti menampilkan pesan
-            Debug.Log("Penumpang telah menyentuh kendaraan!");
+            Debug.Log("Penumpang telah berada didalam kendaraan!");
         }
     }
 }

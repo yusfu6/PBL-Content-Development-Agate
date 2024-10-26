@@ -1,10 +1,7 @@
 using UnityEngine;
 
-public class DestroyTimerOnTrigger : MonoBehaviour
+public class HapusTimer : MonoBehaviour
 {
-    // Referensi ke UI Timer yang akan dihancurkan
-    public GameObject timerPrefab;
-
     private void OnTriggerEnter(Collider other)
     {
         // Cek apakah objek yang masuk ke trigger adalah player dengan tag "Vehicle"
@@ -12,15 +9,16 @@ public class DestroyTimerOnTrigger : MonoBehaviour
         {
             Debug.Log("Vehicle Triggered the Collider!");
 
-            // Jika Timer ada di scene, hancurkan Timer prefab
-            if (timerPrefab != null)
+            // Jika Timer sudah di-spawn oleh script TimerMuncul, hancurkan timer
+            if (TimerMuncul.activeTimerUI != null)
             {
-                Destroy(timerPrefab);
+                Destroy(TimerMuncul.activeTimerUI);
+                TimerMuncul.activeTimerUI = null; // Set referensi ke null setelah dihancurkan
                 Debug.Log("Timer Destroyed");
             }
             else
             {
-                Debug.LogWarning("Timer Prefab is not assigned or is null!");
+                Debug.LogWarning("Timer is not active or has already been destroyed!");
             }
 
             // Hancurkan BoxCollider dari objek ini juga jika diperlukan

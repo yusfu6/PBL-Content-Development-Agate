@@ -7,6 +7,8 @@ TagManager:
   - Vehicle
   - Passenger
   - Pointer
+  - Kendaraan
+  - Penumpang
   layers:
   - Default
   - TransparentFX
