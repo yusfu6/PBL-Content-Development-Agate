@@ -56,7 +56,7 @@ MonoBehaviour:
       m_Calls: []
   hours: 0
   minutes: 0
-  seconds: 45
+  seconds: 59
   startAtRuntime: 1
   hoursDisplay: 0
   minutesDisplay: 1
@@ -67,7 +67,7 @@ MonoBehaviour:
   textMeshProText: {fileID: 0}
   standardSlider: {fileID: 0}
   dialSlider: {fileID: 3804139845377027148}
-  timeRemaining: 45
+  timeRemaining: 59
 --- !u!1 &7546088132650903166
 GameObject:
   m_ObjectHideFlags: 0
