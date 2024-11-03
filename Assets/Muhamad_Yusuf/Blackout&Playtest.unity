@@ -31244,7 +31244,7 @@ MonoBehaviour:
   Waypoints: {fileID: 1116660102}
   XYZConstraint: 0
   AutoStart: 1
-  MoveSpeed: 20
+  MoveSpeed: 25
   LookAtSpeed: 10
   StartIndex: 0
   AutoPositionAtStart: 1
@@ -54268,11 +54268,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   XYZConstraint: 0
   waypoints:
-  - position: {x: -73.068405, y: -2.659999, z: -267.54468}
+  - position: {x: -73.068405, y: -2.659999, z: -259.31247}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    xyzPosition: {x: -73.068405, y: -2.659999, z: -267.54468}
+    xyzPosition: {x: -73.068405, y: -2.659999, z: -259.31247}
     xyPosition: {x: -73.068405, y: -2.659999, z: 0}
-    xzPosition: {x: -73.068405, y: 0, z: -267.54468}
+    xzPosition: {x: -73.068405, y: 0, z: -259.31247}
   - position: {x: -73.068405, y: -2.659999, z: -2.1263428}
     rotation: {x: 0, y: 0, z: 0, w: 1}
     xyzPosition: {x: -73.068405, y: -2.659999, z: -2.1263428}
@@ -54283,11 +54283,11 @@ MonoBehaviour:
     xyzPosition: {x: 129.83232, y: -2.659999, z: -2.1263428}
     xyPosition: {x: 129.83232, y: -2.659999, z: 0}
     xzPosition: {x: 129.83232, y: 0, z: -2.1263428}
-  - position: {x: 130.42174, y: -2.659999, z: -268.28793}
+  - position: {x: 130.42174, y: -2.659999, z: -260.8165}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    xyzPosition: {x: 130.42174, y: -2.659999, z: -268.28793}
+    xyzPosition: {x: 130.42174, y: -2.659999, z: -260.8165}
     xyPosition: {x: 130.42174, y: -2.659999, z: 0}
-    xzPosition: {x: 130.42174, y: 0, z: -268.28793}
+    xzPosition: {x: 130.42174, y: 0, z: -260.8165}
 --- !u!4 &1367949024
 Transform:
   m_ObjectHideFlags: 0
