@@ -516,10 +516,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5643800073855094921, guid: 796adf9b2aa70a24e90adc59a8d487ca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2184528271515327585, guid: 796adf9b2aa70a24e90adc59a8d487ca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 796adf9b2aa70a24e90adc59a8d487ca,
         type: 3}
       propertyPath: m_Name
       value: FlyingCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 796adf9b2aa70a24e90adc59a8d487ca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047553441622655259, guid: 796adf9b2aa70a24e90adc59a8d487ca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718850048270965143, guid: 796adf9b2aa70a24e90adc59a8d487ca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985809222202940619, guid: 796adf9b2aa70a24e90adc59a8d487ca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
